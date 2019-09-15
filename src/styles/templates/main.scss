@@ -1,0 +1,49 @@
+.main {
+  position: relative;
+  z-index: 1;
+}
+
+.main__title {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 15px;
+  margin-left: 26px;
+  margin-bottom: 0;
+  font-family: "Philosopher", "Arial", sans-serif;
+  font-size: 140px;
+  line-height: 1.1214;
+  letter-spacing: 50.4px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.main__intro {
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 80px;
+  padding-left: 80px;
+
+  @media (max-width: 1023px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.main__side-text {
+  position: absolute;
+  top: 50%;
+  left: -23px;
+  transform: rotate(-90deg) translateY(-50%);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.444px;
+}

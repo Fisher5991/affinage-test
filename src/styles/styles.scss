@@ -1,0 +1,14 @@
+// Default
+@import "global/normalize-8.0.1";
+@import "global/_fonts"; // шрифты
+@import "global/_global"; // глобальные стили
+
+// Template
+@import "templates/page.scss";
+@import "templates/button.scss";
+@import "templates/header.scss";
+@import "templates/main.scss";
+@import "templates/intro.scss";
+@import "templates/decor.scss";
+@import "templates/design.scss";
+@import "templates/slider.scss";

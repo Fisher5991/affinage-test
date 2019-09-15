@@ -1,0 +1,66 @@
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+.header__wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-bottom: 4px;
+  margin-left: auto;
+  padding: 34px 80px 5px;
+}
+
+.header__logo {
+  margin-left: -46px;
+}
+
+.header__button-wrapper {
+  position: relative;
+  top: 66px;
+  width: 54px;
+  height: 54px;
+  font-weight: 300;
+  font-style: italic;
+  background-image: url("../img/wreath-small.svg");
+  background-size: 54px 54px;
+}
+
+.header__menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 17px;
+}
+
+.header__button-icon {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: inherit;
+  }
+
+  &::before {
+    top: 6px;
+  }
+
+  &::after {
+    top: -6px;
+  }
+}
