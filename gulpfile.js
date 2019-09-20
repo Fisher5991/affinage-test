@@ -69,8 +69,12 @@ gulp.task('styles:build', function() {
            cascade: false,
            remove: true
         }))
+        .pipe(gulp.dest(path.build.css))
         .pipe(cssmin({ restructuring: false, semanticMerging: false }))
         .pipe(sourcemaps.write('./'))
+        .pipe(rename(function (path) {
+          path.basename +='.min';
+        }))
         .pipe(gulp.dest(path.build.css))
         .pipe(browserSync.stream());
 });
@@ -101,8 +105,12 @@ gulp.task('scripts:build', function() {
     gulp.src(path.src.scripts)
         .pipe(sourcemaps.init())
         .pipe(rigger())
+        .pipe(gulp.dest(path.build.js))
         .pipe(uglify().on('error', function(e){console.log(e.message)}))
         .pipe(sourcemaps.write())
+        .pipe(rename(function (path) {
+          path.basename +='.min';
+        }))
         .pipe(gulp.dest(path.build.js))
         .pipe(browserSync.stream());
 });
