@@ -8,6 +8,10 @@
   width: 100%;
   // min-height: 100vh;
   height: 100%;
+
+  @media (max-width: 1279px) {
+    display: none;
+  }
 }
 
 .decor__block {
@@ -23,6 +27,7 @@
       bottom: 0;
       right: 0;
       width: 83.333%;
+      max-width: 800px;
       height: 77%;
       box-shadow: 0 0 99px 0 rgba(0, 0, 0, 0.1);
     }

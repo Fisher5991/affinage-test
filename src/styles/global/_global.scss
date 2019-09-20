@@ -13,7 +13,6 @@ body {
   background-color: white;
   font-smoothing: antialiased;
   box-sizing: border-box;
-  // overflow-x: hidden;
   min-height: 100vh;
 }
 
@@ -48,18 +47,4 @@ img {
   clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
-}
-
-.container {
-  width: 100%;
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 80px;
-  padding-left: 80px;
-
-  @media (max-width: 1023px) {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
 }
